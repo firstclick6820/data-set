@@ -10,6 +10,8 @@ class AffiliatePrograms(models.Model):
     earnings = models.CharField(max_length=255)
     link = models.URLField()
     type = models.CharField(max_length=255)
+    cookie_expiry = models.SmallIntegerField()
+    payout_threshold = models.SmallIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
